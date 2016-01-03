@@ -1,0 +1,22 @@
+{
+    "name": "october/main-theme",
+    "type": "main-theme",
+    "description": "Andy Tan Main Theme",
+    "keywords": ["october", "cms", "demo", "theme","main","andytan"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andy Tan",
+            "email": "andy.tan2624@gmail.com",
+            "role": "Owner"
+        }
+    ],
+    "require": {
+        "php": ">=5.4"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

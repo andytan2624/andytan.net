@@ -1,0 +1,38 @@
+1449933114s:1314:"a:2:{s:5:"mtime";i:1436191196;s:7:"content";s:1259:"{% set tasks = __SELF__.tasks %}
+
+<form
+    data-request="{{ __SELF__ }}::onAddItem"
+    data-request-success="$('#inputItem').val('')"
+>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Tasks assigned to: {{ __SELF__.name}}</h3>
+        </div>
+        <div class="panel-body">
+            <div class="input-group">
+                <input name="task" type="text" id="inputItem" class="form-control" value="" />
+                <span class="input-group-btn">
+                    <button type="submit" class="btn btn-primary" data-request="boGech">Add</button>
+                </span>
+            </div>
+            <ul class="list-group" id="result">
+                {% for task in tasks %}
+                <li class="list-group-item">
+                    {{ task }}
+
+                    <button class="close pull-right">&times;</button>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</form>
+
+<!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+<script src="{{ ['assets/javascript/vendor/jquery-1.10.2.min.js']|theme }}"></script>
+<script type="text/javascript" src="{{ ['@framework']|theme}}.js"></script>
+
+
+
+";}";

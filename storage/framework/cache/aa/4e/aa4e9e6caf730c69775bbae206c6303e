@@ -1,0 +1,13 @@
+1451807917s:540:"a:6:{s:5:"mtime";i:1435757020;s:7:"content";s:177:"title = "Plugin Components"
+url = "/plugin-components"
+hidden = "0"
+
+[wunderlist]
+==
+<h1>Plugin Components</h1>
+<div class="container">
+   {% component 'wunderlist' %}
+</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:4:{s:5:"title";s:17:"Plugin Components";s:3:"url";s:18:"/plugin-components";s:6:"hidden";s:1:"0";s:10:"components";a:1:{s:10:"wunderlist";a:0:{}}}s:4:"code";N;s:6:"markup";s:92:"<h1>Plugin Components</h1>
+<div class="container">
+   {% component 'wunderlist' %}
+</div>";}";

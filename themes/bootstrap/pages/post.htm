@@ -1,0 +1,62 @@
+title = "Blog Post"
+url = "/post/:slug"
+layout = "default"
+description = "Single post page"
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $slug = $this->param('slug');
+    $this['post'] = Post::where('slug', '=', $slug)
+    ->isPublished()
+    ->with('categories')
+    ->first();
+    if( !$this['post'] )
+    return Redirect::to('/404');
+
+    // only to change the title to be more pleasant
+    $this->page->settings['title'] = "Post - " . $this["post"]->title;
+}
+
+?>
+==
+<header class="intro-header" style="
+            {% if post.featured_images.isEmpty() %}
+                background-image: url('{{ "/assets/images/post-sample-image.jpg"|theme }}')
+{% else %}
+background-image: url('{{ post.featured_images.first().getPath() }}')
+{% endif %}">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+                <h1>{{ post.title }}</h1>
+                <span class="meta">Published on {{ post.published_at|date("F jS, Y") }}</span><br/>
+                {% for category in post.categories %}
+                <a href="{{ 'category'|page({slug: category.slug }) }}">
+                    <span class="label label-primary">{{ category.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<article>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {{ post.content|raw }}
+            </div>
+        </div>
+        <div class="row">
+            <hr/>
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                {% partial 'comments' %}
+            </div>
+        </div>
+    </div>
+</article>
+<hr>

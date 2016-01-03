@@ -1,0 +1,186 @@
+/*Colours*/
+$mainColour: #009999;
+$secondaryColour: #C9F76F;
+$grey: #eff1f4;
+$darkGrey: #eff1f4;
+
+// Primary colours
+$color-primary-0: #6D348D;	// Main Primary color */
+$color-primary-1: #AC81C4;
+$color-primary-2: #8652A3;
+$color-primary-3: #591F79;
+$color-primary-4: #420D60;
+
+// Secondary Colours
+$color-primary-0: #3E9F3E;	/* Main Primary color */
+$color-primary-1: #9ADA9A;
+$color-primary-2: #68BF68;
+$color-primary-3: #238423;
+$color-primary-4: #096209;
+
+/* Webfonts */
+
+/* Typography
+================================= */
+body {
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+/* Links
+================================= */
+.main-logo {
+  width: auto;
+  height: 100%;
+}
+
+/* Layout
+================================= */
+.navbar {
+  margin-bottom: 0px;
+}
+
+.recentwork {
+  margin: 0 auto;
+  max-width: 940px;
+  h2 {
+    margin: 10px 0px;
+    font-family:sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .section-subtitle {
+    margin-bottom: 43px;
+    color: #848999;
+    text-align: center;
+  }
+}
+
+.snapshot {
+  .w-col-4 {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  text-align: center;
+  p {
+    margin-bottom: 26px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+  }
+}
+
+.circle {
+  height: 303px;
+  margin-bottom: 25px;
+  padding-top: 21px;
+  border-radius: 190px;
+  background-color: #f7f8fa;
+  .number {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-right: auto;
+    margin-bottom: 17px;
+    margin-left: auto;
+    padding-top: 6px;
+    border-radius: 50px;
+    background-color: #363b48;
+    font-family: Montserrat, sans-serif;
+    color: #FFF;
+    font-size: 20px;
+  }
+  img {
+    max-width: 243px;
+  }
+}
+
+.skills {
+  width: 100%;
+  background-color: $darkGrey;
+  text-align: center;
+  p {
+    margin-bottom: 26px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px;
+  }
+  .row {
+    max-width: 70%;
+    margin: 0 auto;
+  }
+  .icons {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    border-radius: 40px;
+    background-color: #FFF;
+  }
+}
+
+footer.container {
+  .row {
+    max-width: 70%;
+    margin:0 auto;
+  }
+  background-color: #363B48;
+  width: 100%;
+  .treehouse-ad img {
+    max-width: 250px;
+    padding: 25px;
+  }
+  .social-icons {
+    text-align: right;
+    padding: 20px 0;
+    a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 7px;
+      margin-left: 7px;
+      padding-top: 9px;
+      border-radius: 40px;
+      background-color: #596073;
+      -webkit-transition: all 200ms ease;
+      -o-transition: all 200ms ease;
+      transition: all 200ms ease;
+      text-align: center;
+    }
+  }
+}
+
+/* Form
+================================= */
+
+
+/* Buttons
+================================= */
+
+
+/* Jumbotron
+================================= */
+.jumbotron{
+  padding: 50px 0;
+  .container {
+    max-width: 1000px;
+  }
+  background-image: url('../images/main-bg.png');
+  background-repeat: no-repeat;
+  background-position: 200% 100%;
+}
+.device {
+  background: url('../images/device-hero.png') no-repeat;
+  width: 345px;
+  height: 589px;
+}
+
+/* Logos & Icons
+================================= */
+
+
+/* CSS for Pages */
+.intro-header {
+  margin-top: 50px;
+}

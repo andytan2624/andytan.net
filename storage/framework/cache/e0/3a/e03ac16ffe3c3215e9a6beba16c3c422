@@ -1,0 +1,469 @@
+1429625739s:20597:"a:5:{s:5:"mtime";i:1429625129;s:7:"content";s:10226:"description = "Default layout"
+==
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andy Tan | Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="{{ ['assets/css/normalize.css']|theme }}">
+    <link href="{{ ['assets/css/bootstrap.css']|theme }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ ['assets/css/main.css']|theme }}">
+    <script src="{{ ['assets/javascript/vendor/modernizr-2.6.2.min.js']|theme }}"></script>
+    <link rel="stylesheet" href="{{ ['assets/css/style.css']|theme }}">
+    <link rel="stylesheet" href="{{ ['assets/css/responsive.css?v=1']|theme }}">
+
+
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Andy Tan</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./">About</a></li>
+                <li class=""><a href="./">Portfolio</a></li>
+                <li class=""><a href="./">Contact</a></li>
+                <li class=""><a href="./">Blog</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+<!-- End website will do -->
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>A couple of things I can do</h1>
+                <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
+                <p class="lead">Or download the app and try it first.</p>
+                <p class="lead">
+                    <a class="btn btn-default btn-lg" href="#" data-icon="">iOS</a>
+                    <a class="btn btn-default btn-lg" href="#" data-icon="">Android</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Jumbotron -->
+<!-- Begin Work -->
+<div class="container">
+    <div class="row recentwork">
+        <h2>Recent Work</h2>
+
+        <p class="section-subtitle">Send it to your best friends and your grandma. It'll work on their computers and phones.</p>
+
+        <div class="row snapshot">
+            <div class="col-md-4">
+                <div class="circle">
+                    <div class="number">1</div>
+                    <img src="{{'assets/images/8-layout1.png'|theme}}" alt="Another image"/>
+                </div>
+                <h3>Gosford Junior Australian Football Club</h3>
+                <p>Lorem ipsum dolor sit amets, something, something, sometjing</p>
+            </div>
+            <div class="col-md-4">
+                <div class="circle">
+                    <div  class="number">2</div>
+                    <img src="{{'assets/images/8-layout2.png'|theme}}" alt="Another image"/>
+                </div>
+                <h3>Reconflix</h3>
+                <p>Lorem ipsum dolor sit amets, something, something, sometjing</p>
+            </div>
+            <div class="col-md-4">
+                <div class="circle">
+                    <div class="number">3</div>
+                    <img src="{{'assets/images/8-layout3.png'|theme}}" alt="Another image"/>
+                </div>
+                <h3>Language Tracker</h3>
+                <p>Lorem ipsum dolor sit amets, something, something, sometjing</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Work -->
+<!-- Begin Skills -->
+<div class="container skills">
+    <h2>Some of my skills</h2>
+
+    <p>Send it to your best friends and your grandma. It’ll work on their computers and phones.</p>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div  class="icons">
+                <img src="{{'assets/images/icon/9-icon2-brush.png'|theme}}" width="25"
+                     alt="60e99974-e829-4dc1-accd-daf1e7fdf1c1_9-icon2-brush.png">
+            </div>
+            <h3>PHP</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. .</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-chat.png'|theme}}" width="25"
+                     alt="3ac4f3ae-7b57-4c26-930b-fbaed24601b3_9-icon2-chat.png">
+            </div>
+            <h3>CSS</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-drops.png'|theme}}" width="25"
+                     alt="5b9ab216-8502-4c2a-9d0d-13f712a8d7c9_9-icon2-drops.png">
+            </div>
+            <h3>Javascript</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-eye.png'|theme}}" width="25"
+                     alt="a42359b6-c5c1-4aab-914c-968266ab740e_9-icon2-eye.png">
+            </div>
+            <h3>jQuery</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-phone.png'|theme}}" width="25"
+                     alt="da9ffb16-4e62-4c4e-aa8e-33932f9ccf71_9-icon2-phone.png">
+            </div>
+            <h3>Sass</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-video.png'|theme}}" width="25"
+                     alt="0a33fa10-b61c-421d-92ee-2e926c2fc717_9-icon2-video.png">
+            </div>
+            <h3>Database Administration</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+        </div>
+    </div>
+</div>
+<!-- End Skills -->
+<!-- Begin Footer -->
+<footer class="container ">
+    <div class="row">
+        <div class="col-md-4 treehouse-ad">
+            <a href="http://referrals.trhou.se/andytan" target="_blank"><img
+                    src="http://wac.a8b5.edgecastcdn.net/80A8B5/static-assets/assets/content/referral-badge-grn.png"/></a>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 social-icons">
+            <a href="mailto:andy.tan2624@gmail.com">
+                <img src="{{'assets/images/social/14-social-email.png'|theme}}" width="20"
+                     alt="35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png">
+            </a>
+            <a href="https://www.facebook.com/andy.tan.585559" target="_blank">
+                <img src="{{'assets/images/social/14-social-facebook.png'|theme}}" width="20"
+                     alt="Andy Tan Facebook">
+            </a>
+            <a href="https://twitter.com/ashskywalker10" target="_blank">
+                <img src="{{'assets/images/social/14-social-twitter.png'|theme}}" width="20"
+                     alt="a1c85180-93b5-44b0-9d23-1cfa6881fdfe_14-social-twitter.png">
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ ['assets/javascript/vendor/jquery-1.10.2.min.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/plugins.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/main.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/front.js']|theme }}"></script>
+
+<!-- Google Analytics -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-50887936-1');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>";s:8:"settings";a:2:{s:11:"description";s:14:"Default layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:10192:"<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andy Tan | Home</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="{{ ['assets/css/normalize.css']|theme }}">
+    <link href="{{ ['assets/css/bootstrap.css']|theme }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ ['assets/css/main.css']|theme }}">
+    <script src="{{ ['assets/javascript/vendor/modernizr-2.6.2.min.js']|theme }}"></script>
+    <link rel="stylesheet" href="{{ ['assets/css/style.css']|theme }}">
+    <link rel="stylesheet" href="{{ ['assets/css/responsive.css?v=1']|theme }}">
+
+
+</head>
+<body>
+<!--[if lt IE 7]>
+<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Andy Tan</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="./">About</a></li>
+                <li class=""><a href="./">Portfolio</a></li>
+                <li class=""><a href="./">Contact</a></li>
+                <li class=""><a href="./">Blog</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+</nav>
+<!-- End website will do -->
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>A couple of things I can do</h1>
+                <p class="lead">Learn how to build this fun little app by signing up for a Treehouse account today! We'll teach you how to build both apps from scratch!</p>
+                <p class="lead">Or download the app and try it first.</p>
+                <p class="lead">
+                    <a class="btn btn-default btn-lg" href="#" data-icon="">iOS</a>
+                    <a class="btn btn-default btn-lg" href="#" data-icon="">Android</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Jumbotron -->
+<!-- Begin Work -->
+<div class="container">
+    <div class="row recentwork">
+        <h2>Recent Work</h2>
+
+        <p class="section-subtitle">Send it to your best friends and your grandma. It'll work on their computers and phones.</p>
+
+        <div class="row snapshot">
+            <div class="col-md-4">
+                <div class="circle">
+                    <div class="number">1</div>
+                    <img src="{{'assets/images/8-layout1.png'|theme}}" alt="Another image"/>
+                </div>
+                <h3>Gosford Junior Australian Football Club</h3>
+                <p>Lorem ipsum dolor sit amets, something, something, sometjing</p>
+            </div>
+            <div class="col-md-4">
+                <div class="circle">
+                    <div  class="number">2</div>
+                    <img src="{{'assets/images/8-layout2.png'|theme}}" alt="Another image"/>
+                </div>
+                <h3>Reconflix</h3>
+                <p>Lorem ipsum dolor sit amets, something, something, sometjing</p>
+            </div>
+            <div class="col-md-4">
+                <div class="circle">
+                    <div class="number">3</div>
+                    <img src="{{'assets/images/8-layout3.png'|theme}}" alt="Another image"/>
+                </div>
+                <h3>Language Tracker</h3>
+                <p>Lorem ipsum dolor sit amets, something, something, sometjing</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Work -->
+<!-- Begin Skills -->
+<div class="container skills">
+    <h2>Some of my skills</h2>
+
+    <p>Send it to your best friends and your grandma. It’ll work on their computers and phones.</p>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div  class="icons">
+                <img src="{{'assets/images/icon/9-icon2-brush.png'|theme}}" width="25"
+                     alt="60e99974-e829-4dc1-accd-daf1e7fdf1c1_9-icon2-brush.png">
+            </div>
+            <h3>PHP</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. .</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-chat.png'|theme}}" width="25"
+                     alt="3ac4f3ae-7b57-4c26-930b-fbaed24601b3_9-icon2-chat.png">
+            </div>
+            <h3>CSS</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-drops.png'|theme}}" width="25"
+                     alt="5b9ab216-8502-4c2a-9d0d-13f712a8d7c9_9-icon2-drops.png">
+            </div>
+            <h3>Javascript</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-eye.png'|theme}}" width="25"
+                     alt="a42359b6-c5c1-4aab-914c-968266ab740e_9-icon2-eye.png">
+            </div>
+            <h3>jQuery</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-phone.png'|theme}}" width="25"
+                     alt="da9ffb16-4e62-4c4e-aa8e-33932f9ccf71_9-icon2-phone.png">
+            </div>
+            <h3>Sass</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique. Duis cursus, mi quis viverra ornare, eros dolor</p>
+        </div>
+        <div class="col-sm-4">
+            <div class="icons">
+                <img src="{{'assets/images/icon/9-icon2-video.png'|theme}}" width="25"
+                     alt="0a33fa10-b61c-421d-92ee-2e926c2fc717_9-icon2-video.png">
+            </div>
+            <h3>Database Administration</h3>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum
+                tristique.</p>
+        </div>
+    </div>
+</div>
+<!-- End Skills -->
+<!-- Begin Footer -->
+<footer class="container ">
+    <div class="row">
+        <div class="col-md-4 treehouse-ad">
+            <a href="http://referrals.trhou.se/andytan" target="_blank"><img
+                    src="http://wac.a8b5.edgecastcdn.net/80A8B5/static-assets/assets/content/referral-badge-grn.png"/></a>
+        </div>
+        <div class="col-md-4">
+        </div>
+        <div class="col-md-4 social-icons">
+            <a href="mailto:andy.tan2624@gmail.com">
+                <img src="{{'assets/images/social/14-social-email.png'|theme}}" width="20"
+                     alt="35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png">
+            </a>
+            <a href="https://www.facebook.com/andy.tan.585559" target="_blank">
+                <img src="{{'assets/images/social/14-social-facebook.png'|theme}}" width="20"
+                     alt="Andy Tan Facebook">
+            </a>
+            <a href="https://twitter.com/ashskywalker10" target="_blank">
+                <img src="{{'assets/images/social/14-social-twitter.png'|theme}}" width="20"
+                     alt="a1c85180-93b5-44b0-9d23-1cfa6881fdfe_14-social-twitter.png">
+            </a>
+        </div>
+    </div>
+</footer>
+<!-- End Footer -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="{{ ['assets/javascript/vendor/jquery-1.10.2.min.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/bootstrap.min.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/plugins.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/main.js']|theme }}"></script>
+<script src="{{ ['assets/javascript/front.js']|theme }}"></script>
+
+<!-- Google Analytics -->
+<script>
+    (function (b, o, i, l, e, r) {
+        b.GoogleAnalyticsObject = l;
+        b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+        b[l].l = +new Date;
+        e = o.createElement(i);
+        r = o.getElementsByTagName(i)[0];
+        e.src = '//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e, r)
+    }(window, document, 'script', 'ga'));
+    ga('create', 'UA-50887936-1');
+    ga('send', 'pageview');
+</script>
+</body>
+</html>";}";

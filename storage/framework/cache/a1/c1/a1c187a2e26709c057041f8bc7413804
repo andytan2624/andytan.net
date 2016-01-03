@@ -1,0 +1,16 @@
+1451807917s:383:"a:6:{s:5:"mtime";i:1451802709;s:7:"content";s:116:"==
+{% partial 'header' %}
+
+{% partial 'navigation' %}
+
+{% page %}
+
+<!-- End Skills -->
+{% partial 'footer' %}";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:113:"{% partial 'header' %}
+
+{% partial 'navigation' %}
+
+{% page %}
+
+<!-- End Skills -->
+{% partial 'footer' %}";}";

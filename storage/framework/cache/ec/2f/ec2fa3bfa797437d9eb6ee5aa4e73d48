@@ -1,0 +1,108 @@
+1434859945s:3825:"a:5:{s:5:"mtime";i:1433735364;s:7:"content";s:1831:"title = "HOME PAGE"
+url = "/"
+layout = "default"
+description = "Blog Home Page"
+==
+<?php
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $this['posts'] = Post::isPublished()->orderBy('published_at', 'desc')->take(5)->with('categories')->get();
+}
+?>
+==
+<header class="intro-header" style="background-image: url('{{ "assets/images/home-bg.jpg"|theme }}')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="site-heading">
+                <h1>{{ this.page.title }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% for post in posts %}
+            <div class="post-preview">
+                <a href="{{ 'post'|page({slug: post.slug}) }}">
+                    <h2 class="post-title">
+                        {{ post.title }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{ post.excerpt }}
+                    </h3>
+                </a>
+                <span class="post-meta">Published on {{ post.published_at|date("F jS, Y") }}</span> <br/>
+                {% for category in post.categories %}
+                <a href="{{ 'category'|page({slug: category.slug }) }}">
+                    <span class="label label-primary">{{ category.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+            <hr>
+            {% else %}
+            <h2>No posts found.</h2>
+            {% endfor %}
+
+            <ul class="pager">
+                <li class="next">
+                    <a href="{{ 'posts'|page }}">Older Posts &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>";s:8:"settings";a:5:{s:5:"title";s:9:"HOME PAGE";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:11:"description";s:14:"Blog Home Page";s:10:"components";a:0:{}}s:4:"code";s:165:"
+use RainLab\Blog\Models\Post;
+
+function onStart(){
+    $this['posts'] = Post::isPublished()->orderBy('published_at', 'desc')->take(5)->with('categories')->get();
+}
+";s:6:"markup";s:1572:"<header class="intro-header" style="background-image: url('{{ "assets/images/home-bg.jpg"|theme }}')">
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="site-heading">
+                <h1>{{ this.page.title }}</h1>
+            </div>
+        </div>
+    </div>
+</div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            {% for post in posts %}
+            <div class="post-preview">
+                <a href="{{ 'post'|page({slug: post.slug}) }}">
+                    <h2 class="post-title">
+                        {{ post.title }}
+                    </h2>
+                    <h3 class="post-subtitle">
+                        {{ post.excerpt }}
+                    </h3>
+                </a>
+                <span class="post-meta">Published on {{ post.published_at|date("F jS, Y") }}</span> <br/>
+                {% for category in post.categories %}
+                <a href="{{ 'category'|page({slug: category.slug }) }}">
+                    <span class="label label-primary">{{ category.name }}</span>
+                </a>
+                {% endfor %}
+            </div>
+            <hr>
+            {% else %}
+            <h2>No posts found.</h2>
+            {% endfor %}
+
+            <ul class="pager">
+                <li class="next">
+                    <a href="{{ 'posts'|page }}">Older Posts &rarr;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>";}";

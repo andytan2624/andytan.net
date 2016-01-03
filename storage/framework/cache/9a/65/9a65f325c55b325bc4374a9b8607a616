@@ -1,0 +1,17 @@
+1434859945s:382:"a:5:{s:5:"mtime";i:1433735471;s:7:"content";s:122:"description = "Default Layout"
+
+==
+
+{% partial 'header' %}
+
+{% partial 'navigation' %}
+
+{% page %}
+
+{% partial 'footer' %}";s:8:"settings";a:2:{s:11:"description";s:14:"Default Layout";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:86:"{% partial 'header' %}
+
+{% partial 'navigation' %}
+
+{% page %}
+
+{% partial 'footer' %}";}";

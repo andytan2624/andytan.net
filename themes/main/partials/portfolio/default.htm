@@ -1,0 +1,20 @@
+==
+<!-- Begin Work -->
+<div class="container">
+    <div class="row recentwork">
+        <h2>Recent Work</h2>
+
+        <div class="row snapshot">
+            {% for item in __SELF__.portfolio %}
+                <div class="col-md-4">
+                    <div class="circle">
+                        {% set image = item.images.first %}
+                        <img src="{{ image.path }}" class="img-responsive" alt="{{ image.title }}">
+                    </div>
+                    <h3>{{ item.title }}</h3>
+                    <p>{{ item.description|raw }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>

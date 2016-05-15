@@ -29,23 +29,37 @@ class __TwigTemplate_05786e0aa9e3e324109048d4280f7d2d7f26572c6a94f60c197d6fe4ca8
         foreach ($context['_seq'] as $context["_key"] => $context["item"]) {
             // line 8
             echo "                <div class=\"col-md-4\">
-                    <div class=\"circle\">
-                        ";
-            // line 10
-            $context["image"] = $this->getAttribute($this->getAttribute($context["item"], "images", array()), "first", array());
+                    <a href=\"";
+            // line 9
+            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "url", array()), "html", null, true);
+            echo "\" title=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["image"]) ? $context["image"] : null), "title", array()), "html", null, true);
+            echo "\"  target=\"_blank\">
+                        <div class=\"circle\" >
+                            ";
             // line 11
-            echo "                        <img src=\"";
+            $context["image"] = $this->getAttribute($this->getAttribute($context["item"], "images", array()), "first", array());
+            // line 12
+            echo "                            <img src=\"";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["image"]) ? $context["image"] : null), "path", array()), "html", null, true);
             echo "\" class=\"img-responsive\" alt=\"";
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["image"]) ? $context["image"] : null), "title", array()), "html", null, true);
             echo "\">
-                    </div>
-                    <h3>";
-            // line 13
+                        </div>
+                    </a>
+                    <a href=\"";
+            // line 15
+            echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "url", array()), "html", null, true);
+            echo "\" title=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute((isset($context["image"]) ? $context["image"] : null), "title", array()), "html", null, true);
+            echo "\" target=\"_blank\">
+                        <h3>";
+            // line 16
             echo twig_escape_filter($this->env, $this->getAttribute($context["item"], "title", array()), "html", null, true);
             echo "</h3>
+                    </a>
                     <p>";
-            // line 14
+            // line 18
             echo $this->getAttribute($context["item"], "description", array());
             echo "</p>
                 </div>
@@ -54,7 +68,7 @@ class __TwigTemplate_05786e0aa9e3e324109048d4280f7d2d7f26572c6a94f60c197d6fe4ca8
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['item'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 17
+        // line 21
         echo "        </div>
     </div>
 </div>";
@@ -72,7 +86,7 @@ class __TwigTemplate_05786e0aa9e3e324109048d4280f7d2d7f26572c6a94f60c197d6fe4ca8
 
     public function getDebugInfo()
     {
-        return array (  58 => 17,  49 => 14,  45 => 13,  37 => 11,  35 => 10,  31 => 8,  27 => 7,  19 => 1,);
+        return array (  72 => 21,  63 => 18,  58 => 16,  52 => 15,  43 => 12,  41 => 11,  34 => 9,  31 => 8,  27 => 7,  19 => 1,);
     }
 }
 /* <!-- Begin Work -->*/
@@ -83,11 +97,15 @@ class __TwigTemplate_05786e0aa9e3e324109048d4280f7d2d7f26572c6a94f60c197d6fe4ca8
 /*         <div class="row snapshot">*/
 /*             {% for item in __SELF__.portfolio %}*/
 /*                 <div class="col-md-4">*/
-/*                     <div class="circle">*/
-/*                         {% set image = item.images.first %}*/
-/*                         <img src="{{ image.path }}" class="img-responsive" alt="{{ image.title }}">*/
-/*                     </div>*/
-/*                     <h3>{{ item.title }}</h3>*/
+/*                     <a href="{{ item.url }}" title="{{ image.title }}"  target="_blank">*/
+/*                         <div class="circle" >*/
+/*                             {% set image = item.images.first %}*/
+/*                             <img src="{{ image.path }}" class="img-responsive" alt="{{ image.title }}">*/
+/*                         </div>*/
+/*                     </a>*/
+/*                     <a href="{{ item.url }}" title="{{ image.title }}" target="_blank">*/
+/*                         <h3>{{ item.title }}</h3>*/
+/*                     </a>*/
 /*                     <p>{{ item.description|raw }}</p>*/
 /*                 </div>*/
 /*             {% endfor %}*/

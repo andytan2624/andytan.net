@@ -1,4 +1,4 @@
-1451807917s:1371:"a:6:{s:5:"mtime";i:1451799558;s:7:"content";s:537:"title = "Blog Category"
+1463295719s:1371:"a:6:{s:5:"mtime";i:1451799558;s:7:"content";s:537:"title = "Blog Category"
 url = "/blog/category/:slug"
 layout = "default"
 hidden = "0"

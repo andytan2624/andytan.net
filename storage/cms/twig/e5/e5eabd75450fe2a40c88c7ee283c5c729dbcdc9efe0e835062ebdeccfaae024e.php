@@ -26,23 +26,16 @@ class __TwigTemplate_6b955781caa9d017c4282d3027b8ff1340d11851a8d9290d5b60b8b8079
         <div class=\"col-md-4\">
         </div>
         <div class=\"col-md-4 social-icons\">
-            <a href=\"mailto:andy.tan2624@gmail.com\">
+            <a href=\"https://www.linkedin.com/in/andytan87\" target=\"_blank\">
                 <img src=\"";
         // line 12
-        echo $this->env->getExtension('CMS')->themeFilter("assets/images/social/14-social-email.png");
+        echo $this->env->getExtension('CMS')->themeFilter("assets/images/social/linkedin.png");
         echo "\" width=\"20\"
-                     alt=\"35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png\">
-            </a>
-            <a href=\"https://www.facebook.com/andy.tan.585559\" target=\"_blank\">
-                <img src=\"";
-        // line 16
-        echo $this->env->getExtension('CMS')->themeFilter("assets/images/social/14-social-facebook.png");
-        echo "\" width=\"20\"
-                     alt=\"Andy Tan Facebook\">
+                     alt=\"Linked In Profile\">
             </a>
             <a href=\"https://twitter.com/ashskywalker10\" target=\"_blank\">
                 <img src=\"";
-        // line 20
+        // line 16
         echo $this->env->getExtension('CMS')->themeFilter("assets/images/social/14-social-twitter.png");
         echo "\" width=\"20\"
                      alt=\"a1c85180-93b5-44b0-9d23-1cfa6881fdfe_14-social-twitter.png\">
@@ -54,36 +47,36 @@ class __TwigTemplate_6b955781caa9d017c4282d3027b8ff1340d11851a8d9290d5b60b8b8079
 
 <script src=\"//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js\"></script>
 <script src=\"";
-        // line 29
+        // line 25
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/javascript/vendor/jquery-1.10.2.min.js"));
         echo "\"></script>
 <script type=\"text/javascript\" src=\"";
-        // line 30
+        // line 26
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "@framework"));
         echo ".js\"></script>
 <script src=\"";
-        // line 31
+        // line 27
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/javascript/bootstrap.min.js"));
         echo "\"></script>
 <script src=\"";
-        // line 32
+        // line 28
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/javascript/plugins.js"));
         echo "\"></script>
 <script src=\"";
-        // line 33
+        // line 29
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/javascript/main.js"));
         echo "\"></script>
 <script src=\"";
-        // line 34
+        // line 30
         echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/javascript/front.js"));
         echo "\"></script>
 
 ";
-        // line 36
+        // line 32
         $context['__cms_component_params'] = [];
         echo $this->env->getExtension('CMS')->componentFunction("gaCode"        , $context['__cms_component_params']        );
         unset($context['__cms_component_params']);
-        // line 37
+        // line 33
         echo "</body>
 </html>";
     }
@@ -100,7 +93,7 @@ class __TwigTemplate_6b955781caa9d017c4282d3027b8ff1340d11851a8d9290d5b60b8b8079
 
     public function getDebugInfo()
     {
-        return array (  87 => 37,  83 => 36,  78 => 34,  74 => 33,  70 => 32,  66 => 31,  62 => 30,  58 => 29,  46 => 20,  39 => 16,  32 => 12,  19 => 1,);
+        return array (  80 => 33,  76 => 32,  71 => 30,  67 => 29,  63 => 28,  59 => 27,  55 => 26,  51 => 25,  39 => 16,  32 => 12,  19 => 1,);
     }
 }
 /* <!-- Begin Footer -->*/
@@ -113,13 +106,9 @@ class __TwigTemplate_6b955781caa9d017c4282d3027b8ff1340d11851a8d9290d5b60b8b8079
 /*         <div class="col-md-4">*/
 /*         </div>*/
 /*         <div class="col-md-4 social-icons">*/
-/*             <a href="mailto:andy.tan2624@gmail.com">*/
-/*                 <img src="{{'assets/images/social/14-social-email.png'|theme}}" width="20"*/
-/*                      alt="35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png">*/
-/*             </a>*/
-/*             <a href="https://www.facebook.com/andy.tan.585559" target="_blank">*/
-/*                 <img src="{{'assets/images/social/14-social-facebook.png'|theme}}" width="20"*/
-/*                      alt="Andy Tan Facebook">*/
+/*             <a href="https://www.linkedin.com/in/andytan87" target="_blank">*/
+/*                 <img src="{{'assets/images/social/linkedin.png'|theme}}" width="20"*/
+/*                      alt="Linked In Profile">*/
 /*             </a>*/
 /*             <a href="https://twitter.com/ashskywalker10" target="_blank">*/
 /*                 <img src="{{'assets/images/social/14-social-twitter.png'|theme}}" width="20"*/

@@ -2,6 +2,7 @@
 
 use Config;
 use Google_Client;
+use Google_Cache_File;
 use Google_Service_Analytics;
 use Google_Auth_AssertionCredentials;
 use ApplicationException;
@@ -29,30 +30,35 @@ class Analytics
     protected function init()
     {
         $settings = Settings::instance();
-        if (!strlen($settings->project_name))
+        if (!strlen($settings->profile_id)) {
             throw new ApplicationException(trans('rainlab.googleanalytics::lang.strings.notconfigured'));
+        }
 
-        if (!$settings->gapi_key)
+        if (!$settings->gapi_key) {
             throw new ApplicationException(trans('rainlab.googleanalytics::lang.strings.keynotuploaded'));
+        }
 
-        $tmpDir = temp_path() . '/Google_Client';
+        $client = new Google_Client();
 
-        $this->client = new Google_Client();
-        $this->client->setApplicationName($settings->project_name);
-        $this->client->setClassConfig('Google_Cache_File', 'directory', $tmpDir);
+        /*
+         * Set caching
+         */
+        $cache = new Google_Cache_File(temp_path() . '/Google_Client');
+        $client->setCache($cache);
 
         /*
          * Set assertion credentials
          */
-        $this->client->setAssertionCredentials(
-          new Google_Auth_AssertionCredentials(
-            $settings->app_email,
-            array(Google_Service_Analytics::ANALYTICS_READONLY),
-            $settings->gapi_key->getContents()
-        ));
+        $auth = json_decode($settings->gapi_key->getContents(), true);
+        $client->setAuthConfig($auth);
+        $client->addScope(Google_Service_Analytics::ANALYTICS_READONLY);
 
-        $this->client->setClientId($settings->client_id);
-        $this->service = new Google_Service_Analytics($this->client);
+        if ($client->isAccessTokenExpired()) {
+            $client->refreshTokenWithAssertion();
+        }
+
+        $this->client = $client;
+        $this->service = new Google_Service_Analytics($client);
         $this->viewId = 'ga:'.$settings->profile_id;
     }
 }

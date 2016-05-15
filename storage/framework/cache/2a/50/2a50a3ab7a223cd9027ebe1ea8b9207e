@@ -1,4 +1,4 @@
-1451807917s:4366:"a:6:{s:5:"mtime";i:1451796426;s:7:"content";s:2068:"title = "Blog Post"
+1463295719s:3923:"a:6:{s:5:"mtime";i:1463265406;s:7:"content";s:1854:"title = "Blog Post"
 url = "/post/:slug"
 layout = "default"
 description = "Single post page"
@@ -45,9 +45,6 @@ background-image: url('{{ post.featured_images.first().getPath() }}')
                 {% endfor %}
             </div>
         </div>
-        <div class="col-lg-4">
-            {% component 'blogCategories' %}
-        </div>
     </div>
 </div>
 </header>
@@ -55,19 +52,15 @@ background-image: url('{{ post.featured_images.first().getPath() }}')
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {{ post.content|raw }}
-            </div>
-        </div>
-        <div class="row">
-            <hr/>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {% partial 'comments' %}
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 blog-post-content">
+                <p>
+                    {{ post.content_html|raw  }}
+                </p>
             </div>
         </div>
     </div>
 </article>
-<hr>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:9:"Blog Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:11:"description";s:16:"Single post page";s:6:"hidden";s:1:"0";s:10:"components";a:1:{s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog/category";}}}s:4:"code";s:395:"
+";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:9:"Blog Post";s:3:"url";s:11:"/post/:slug";s:6:"layout";s:7:"default";s:11:"description";s:16:"Single post page";s:6:"hidden";s:1:"0";s:10:"components";a:1:{s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:13:"blog/category";}}}s:4:"code";s:397:"
 use RainLab\Blog\Models\Post;
 
 function onStart(){
@@ -82,7 +75,7 @@ function onStart(){
     // only to change the title to be more pleasant
     $this->page->settings['title'] = "Post - " . $this["post"]->title;
 }
-";s:6:"markup";s:1465:"<header class="intro-header" style="
+";s:6:"markup";s:1234:"<header class="intro-header" style="
             {% if post.featured_images.isEmpty() %}
                 background-image: url('{{ "/assets/images/post-sample-image.jpg"|theme }}')
 {% else %}
@@ -101,9 +94,6 @@ background-image: url('{{ post.featured_images.first().getPath() }}')
                 {% endfor %}
             </div>
         </div>
-        <div class="col-lg-4">
-            {% component 'blogCategories' %}
-        </div>
     </div>
 </div>
 </header>
@@ -111,16 +101,11 @@ background-image: url('{{ post.featured_images.first().getPath() }}')
 <article>
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {{ post.content|raw }}
-            </div>
-        </div>
-        <div class="row">
-            <hr/>
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                {% partial 'comments' %}
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 blog-post-content">
+                <p>
+                    {{ post.content_html|raw  }}
+                </p>
             </div>
         </div>
     </div>
-</article>
-<hr>";}";
+</article>";}";

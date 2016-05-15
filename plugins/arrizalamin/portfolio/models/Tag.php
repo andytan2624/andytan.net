@@ -29,7 +29,7 @@ class Tag extends Model
      * @var array Validation rules
      */
     public $rules = [
-        'name' => 'required|unique:arrizalamin_portfolio_tags|regex:/^[a-z0-9]+$/'
+        'name' => 'required|unique:arrizalamin_portfolio_tags|regex:/^[a-z0-9-_]+$/'
     ];
 
     /**
@@ -49,6 +49,11 @@ class Tag extends Model
             'ArrizalAmin\Portfolio\Models\Item',
             'table' => 'arrizalamin_portfolio_item_tag',
             'order' => 'arrizalamin_portfolio_items.updated_at desc'
+        ],
+        'items_count' => [
+            'ArrizalAmin\Portfolio\Models\Item',
+            'table' => 'arrizalamin_portfolio_item_tag',
+            'count' => true
         ]
     ];
 
@@ -59,5 +64,22 @@ class Tag extends Model
     {
         $this->attributes['name'] = strtolower($value);
     }
+
+    /**
+     * Set the PageUrl parameter to link the correct page
+     *
+     * @param $pageName
+     * @param $controller
+     * @return mixed
+     */
+    public function setPageUrl($pageName, $controller)
+    {
+        $params = [
+            'selected_tag' => $this->name,
+        ];
+
+        return $this->pageUrl = $controller->pageUrl($pageName, $params);
+    }
+
 
 }

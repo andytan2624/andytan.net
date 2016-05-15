@@ -1,4 +1,4 @@
-1451807917s:3776:"a:6:{s:5:"mtime";i:1435844498;s:7:"content";s:1810:"<!-- Begin Footer -->
+1463295719s:3258:"a:6:{s:5:"mtime";i:1453011984;s:7:"content";s:1551:"<!-- Begin Footer -->
 <footer class="container ">
     <div class="row">
         <div class="col-md-4 treehouse-ad">
@@ -8,13 +8,9 @@
         <div class="col-md-4">
         </div>
         <div class="col-md-4 social-icons">
-            <a href="mailto:andy.tan2624@gmail.com">
-                <img src="{{'assets/images/social/14-social-email.png'|theme}}" width="20"
-                     alt="35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png">
-            </a>
-            <a href="https://www.facebook.com/andy.tan.585559" target="_blank">
-                <img src="{{'assets/images/social/14-social-facebook.png'|theme}}" width="20"
-                     alt="Andy Tan Facebook">
+            <a href="https://www.linkedin.com/in/andytan87" target="_blank">
+                <img src="{{'assets/images/social/linkedin.png'|theme}}" width="20"
+                     alt="Linked In Profile">
             </a>
             <a href="https://twitter.com/ashskywalker10" target="_blank">
                 <img src="{{'assets/images/social/14-social-twitter.png'|theme}}" width="20"
@@ -35,7 +31,7 @@
 
 {% component "gaCode" %}
 </body>
-</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1810:"<!-- Begin Footer -->
+</html>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1551:"<!-- Begin Footer -->
 <footer class="container ">
     <div class="row">
         <div class="col-md-4 treehouse-ad">
@@ -45,13 +41,9 @@
         <div class="col-md-4">
         </div>
         <div class="col-md-4 social-icons">
-            <a href="mailto:andy.tan2624@gmail.com">
-                <img src="{{'assets/images/social/14-social-email.png'|theme}}" width="20"
-                     alt="35ec5a20-6309-494a-9d48-0e463a4d6214_14-social-email.png">
-            </a>
-            <a href="https://www.facebook.com/andy.tan.585559" target="_blank">
-                <img src="{{'assets/images/social/14-social-facebook.png'|theme}}" width="20"
-                     alt="Andy Tan Facebook">
+            <a href="https://www.linkedin.com/in/andytan87" target="_blank">
+                <img src="{{'assets/images/social/linkedin.png'|theme}}" width="20"
+                     alt="Linked In Profile">
             </a>
             <a href="https://twitter.com/ashskywalker10" target="_blank">
                 <img src="{{'assets/images/social/14-social-twitter.png'|theme}}" width="20"

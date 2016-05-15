@@ -25,21 +25,30 @@ class __TwigTemplate_103643463a7fd1d9e130448522bac6c87e68d4090d1be56785044550637
                 <span class=\"icon-bar\"></span>
                 <span class=\"icon-bar\"></span>
             </button>
-            <a class=\"navbar-brand\" href=\"#\">Andy Tan</a>
+            <a class=\"navbar-brand\" href=\"";
+        // line 10
+        echo $this->env->getExtension('CMS')->pageFilter("home");
+        echo "\">
+                <div id=\"headerTxt\">
+                    <p id=\"nameheader\">Andy Tan</p>
+
+                    <p>Web Developer</p>
+                </div>
+            </a>
         </div>
         <div id=\"navbar\" class=\"navbar-collapse collapse\" aria-expanded=\"false\" style=\"height: 1px;\">
 
             <ul class=\"nav navbar-nav navbar-right\">
                 <li class=\"";
-        // line 15
-        if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "about")) {
+        // line 21
+        if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "")) {
             echo "active ";
         }
         echo "\"><a href=\"";
-        echo $this->env->getExtension('CMS')->pageFilter("about");
-        echo "\">About</a></li>
+        echo $this->env->getExtension('CMS')->pageFilter("home");
+        echo "\">Home</a></li>
                 <li class=\"";
-        // line 16
+        // line 22
         if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "portfolio")) {
             echo "active ";
         }
@@ -47,7 +56,7 @@ class __TwigTemplate_103643463a7fd1d9e130448522bac6c87e68d4090d1be56785044550637
         echo $this->env->getExtension('CMS')->pageFilter("portfolio");
         echo "\">Portfolio</a></li>
                 <li class=\"";
-        // line 17
+        // line 23
         if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "contact")) {
             echo "active ";
         }
@@ -55,8 +64,8 @@ class __TwigTemplate_103643463a7fd1d9e130448522bac6c87e68d4090d1be56785044550637
         echo $this->env->getExtension('CMS')->pageFilter("contact");
         echo "\">Contact</a></li>
                 <li class=\"";
-        // line 18
-        if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "posts")) {
+        // line 24
+        if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "pagAe", array()), "id", array()) == "posts")) {
             echo "active ";
         }
         echo "\"><a href=\"";
@@ -80,7 +89,7 @@ class __TwigTemplate_103643463a7fd1d9e130448522bac6c87e68d4090d1be56785044550637
 
     public function getDebugInfo()
     {
-        return array (  59 => 18,  51 => 17,  43 => 16,  35 => 15,  19 => 1,);
+        return array (  68 => 24,  60 => 23,  52 => 22,  44 => 21,  30 => 10,  19 => 1,);
     }
 }
 /* <nav class="navbar navbar-default navbar-fixed-top" role="navigation">*/
@@ -92,15 +101,21 @@ class __TwigTemplate_103643463a7fd1d9e130448522bac6c87e68d4090d1be56785044550637
 /*                 <span class="icon-bar"></span>*/
 /*                 <span class="icon-bar"></span>*/
 /*             </button>*/
-/*             <a class="navbar-brand" href="#">Andy Tan</a>*/
+/*             <a class="navbar-brand" href="{{ 'home'|page }}">*/
+/*                 <div id="headerTxt">*/
+/*                     <p id="nameheader">Andy Tan</p>*/
+/* */
+/*                     <p>Web Developer</p>*/
+/*                 </div>*/
+/*             </a>*/
 /*         </div>*/
 /*         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">*/
 /* */
 /*             <ul class="nav navbar-nav navbar-right">*/
-/*                 <li class="{% if( this.page.id == 'about') %}active {% endif %}"><a href="{{ 'about'|page }}">About</a></li>*/
+/*                 <li class="{% if( this.page.id == '') %}active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>*/
 /*                 <li class="{% if( this.page.id == 'portfolio') %}active {% endif %}"><a href="{{ 'portfolio'|page }}">Portfolio</a></li>*/
 /*                 <li class="{% if( this.page.id == 'contact') %}active {% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>*/
-/*                 <li class="{% if( this.page.id == 'posts') %}active {% endif %}"><a href="{{ 'posts'|page }}">Blog</a></li>*/
+/*                 <li class="{% if( this.pagAe.id == 'posts') %}active {% endif %}"><a href="{{ 'posts'|page }}">Blog</a></li>*/
 /*             </ul>*/
 /*         </div><!--/.nav-collapse -->*/
 /*     </div><!--/.container-fluid -->*/

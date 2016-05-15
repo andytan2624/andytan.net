@@ -1,0 +1,216 @@
+/*Colours*/
+/* Main Primary color */
+/* Webfonts */
+/* Typography
+================================= */
+body {
+  font-family: Verdana, Tahoma, sans-serif; }
+
+/* Links
+================================= */
+.main-logo {
+  width: auto;
+  height: 100%; }
+
+/* Layout
+================================= */
+.navbar {
+  margin-bottom: 0px;
+  min-height: 80px; }
+
+.recentwork {
+  margin: 0 auto;
+  max-width: 940px; }
+  .recentwork h2 {
+    margin: 10px 0px;
+    font-family: sans-serif;
+    font-size: 31px;
+    font-weight: 400;
+    text-align: center; }
+  .recentwork .section-subtitle {
+    margin-bottom: 43px;
+    color: #848999;
+    text-align: center; }
+
+.snapshot {
+  text-align: center; }
+  .snapshot .w-col-4 {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .snapshot p {
+    margin-bottom: 26px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px; }
+
+.circle {
+  width: 230px;
+  height: 230px;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  border-radius: 50%;
+  margin: 0 auto; }
+  .circle img {
+    display: inline;
+    top: 0;
+    margin: 0 auto;
+    height: 100%;
+    width: auto; }
+
+.skills {
+  width: 100%;
+  background-color: #eff1f4;
+  text-align: center; }
+  .skills p {
+    margin-bottom: 26px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 14px; }
+  .skills .row {
+    max-width: 70%;
+    margin: 0 auto; }
+  .skills .icons {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding-top: 12px;
+    border-radius: 40px;
+    background-color: #FFF; }
+
+footer.container {
+  background-color: #363B48;
+  width: 100%; }
+  footer.container .row {
+    max-width: 70%;
+    margin: 0 auto; }
+  footer.container .treehouse-ad img {
+    max-width: 250px;
+    padding: 25px; }
+  footer.container .social-icons {
+    text-align: right;
+    padding: 20px 0; }
+    footer.container .social-icons a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 7px;
+      margin-left: 7px;
+      padding-top: 9px;
+      border-radius: 40px;
+      background-color: #596073;
+      -webkit-transition: all 200ms ease;
+      -o-transition: all 200ms ease;
+      transition: all 200ms ease;
+      text-align: center; }
+
+#headerTxt {
+  float: left;
+  width: 400px;
+  text-align: center; }
+
+#nameheader {
+  font-size: 1.5em;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.9); }
+
+/* Form
+================================= */
+/* Buttons
+================================= */
+/* Jumbotron
+================================= */
+.jumbotron {
+  padding: 50px 0;
+  background-image: url("../themes/main/assets/images/background/workspace.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 400px;
+  position: relative; }
+  .jumbotron .container {
+    max-width: 1000px; }
+
+.device {
+  background: url("../themes/main/assets/images/device-hero.png") no-repeat;
+  width: 345px;
+  height: 589px; }
+
+.jumbotron-container {
+  background-color: grey;
+  opacity: 0.8;
+  width: 30%;
+  margin-left: 20px;
+  bottom: 20%;
+  position: absolute;
+  padding: 10px;
+  color: #fff; }
+
+/* Logos & Icons
+================================= */
+/* CSS for Pages */
+.intro-header {
+  margin-top: 80px; }
+
+.glyphicon {
+  font-size: 25px; }
+
+/*Portfolio*/
+.portfolio {
+  width: 960px;
+  padding-top: 20px;
+  margin: 0 auto; }
+  .portfolio .figure {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+    line-height: 1.2em;
+    width: 430px;
+    height: 290px; }
+    .portfolio .figure .figcaption {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: 100%;
+      background: #4593EC;
+      color: #f1f1f1;
+      padding: 10px; }
+      .portfolio .figure .figcaption strong {
+        font-weight: bold;
+        line-height: 1.3em;
+        margin-bottom: 7px;
+        margin-top: 17px; }
+      .portfolio .figure .figcaption span {
+        font-size: 11px;
+        margin-bottom: 7px; }
+      .portfolio .figure .figcaption em {
+        font-size: 11px;
+        font-weight: bold;
+        font-style: normal;
+        position: absolute;
+        bottom: 10px; }
+  .portfolio .thumb {
+    display: block; }
+  .portfolio img {
+    max-width: 100%;
+    opacity: .999;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .portfolio a:hover img {
+    opacity: 0.1;
+    line-height: 0em; }
+
+/* Navigation
+================================= */
+.nav.navbar-nav.navbar-right {
+  margin-top: 15px; }
+
+/*# sourceMappingURL=style.css.map */

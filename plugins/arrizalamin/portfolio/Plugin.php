@@ -8,7 +8,6 @@ use Backend;
  */
 class Plugin extends PluginBase
 {
-
     /**
      * Returns information about this plugin.
      *
@@ -94,7 +93,8 @@ class Plugin extends PluginBase
     public function registerComponents()
     {
         return [
-            'ArrizalAmin\Portfolio\Components\Portfolio' => 'portfolio'
+            'ArrizalAmin\Portfolio\Components\Portfolio' => 'portfolio',
+            'ArrizalAmin\Portfolio\Components\Item' => 'item'
         ];
     }
 }

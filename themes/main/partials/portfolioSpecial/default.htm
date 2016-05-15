@@ -1,0 +1,13 @@
+==
+{% for item in __SELF__.portfolio %}
+    {% set image = item.images.first %}
+        <div class="figure" style="background-image: url('{{ image.path }}')">
+            <a href="{{ item.url }}" title="{{ image.title }}"  target="_blank">
+                <div class="figcaption">
+                    <strong>{{ image.title }}</strong>
+                    <span>{{ item.description|raw }}</span>
+                    <a href="portfolio.php?cid=1&amp;pid=16" class="opener"></a>
+                </div>
+            </a>
+        </div>
+{% endfor %}

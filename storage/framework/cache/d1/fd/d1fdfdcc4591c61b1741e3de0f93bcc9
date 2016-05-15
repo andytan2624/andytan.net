@@ -1,4 +1,4 @@
-1451800001s:863:"a:2:{s:5:"mtime";i:1429962808;s:7:"content";s:809:"{% set post = __SELF__.post %}
+1463265846s:883:"a:2:{s:5:"mtime";i:1463265244;s:7:"content";s:829:"{% set post = __SELF__.post %}
 
 <div class="content">{{ post.content_html|raw }}</div>
 
@@ -25,4 +25,4 @@
     {% endif %}
     on {{ post.published_at|date('M d, Y') }}
 </p>
-";}";
+bo gech then get wal";}";

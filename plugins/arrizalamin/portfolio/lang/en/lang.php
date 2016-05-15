@@ -19,17 +19,13 @@ return [
     ],
     'components' => [
         'portfolio' => [
-            'name' => 'Portfolio',
+            'name' => 'Portfolio List',
             'description' => 'Create a list of portfolio.',
             'properties' => [
                 'category' => [
                     'title' => 'Category',
                     'placeholder' => 'Select Category',
                     'all' => 'All'
-                ],
-                'selectedTag' => [
-                    'title' => 'Selected Tag',
-                    'description' => 'This value can be changed depending on the identifier used in the URL of this page. See the manual for this plugin for more information.'
                 ],
                 'pageNumber' => [
                     'title' => 'Page Number',
@@ -46,10 +42,45 @@ return [
                     'descending' => 'Descending'
                 ],
                 'group' => [
-                    'advanced' => 'Advanced'
-                ]
-
-            ]
+                    'advanced' => 'Advanced',
+                    'links' => 'Links'
+                ],
+                'selectedTag' => [
+                    'title' => 'Selected tag',
+                    'description' => 'Don\'t change this value (default: {{ :selected_tag }})'
+                ],
+                'selectedCat' => [
+                    'title' => 'Selected category',
+                    'description' => 'Don\'t change this value (default: {{ :selected_cat }})'
+                ],
+                'itemPage' => [
+                    'title' => 'Item page',
+                    'description' => 'Page where portfolio items can be displayed.'
+                ],
+                'tagListPage' => [
+                    'title' => 'Tag list page',
+                    'description' => 'Page where portfolio items with matching tag are listed.'
+                ],
+                'catListPage' => [
+                    'title' => 'Category page',
+                    'description' => 'Page where portfolio items of the selected category are listed.'
+                ],
+            ],
+        ],
+        'item' => [
+            'name' => 'Portfolio Item',
+            'description' => 'Display a single item from the portfolio collection.',
+            'properties' => [
+                'item' => [
+                    'title' => 'Item to show',
+                    'description' => 'Select a item to show. Will be overridden by URL item selection.',
+                    'none' => 'None',
+                ],
+                'itemSlug' => [
+                    'title' => 'Item slug',
+                    'description' => 'Item slug URL identifier'
+                ],
+            ],
         ],
     ],
     'controller' => [
@@ -130,6 +161,7 @@ return [
         'item' => [
             'title' => 'Title',
             'category' => 'Category',
+            'slug' => 'Slug',
             'tags' => 'Tags',
             'description' => 'Description',
             'images' => 'Images',
@@ -137,6 +169,7 @@ return [
         ],
         'category' => [
             'name' => 'Name',
+            'slug' => 'Slug',
             'description' => 'Description'
         ],
         'tag' => [

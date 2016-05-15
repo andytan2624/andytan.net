@@ -1,0 +1,25 @@
+1463295901s:1264:"a:6:{s:5:"mtime";i:1456633444;s:7:"content";s:558:"==
+{% for item in __SELF__.portfolio %}
+    {% set image = item.images.first %}
+        <div class="figure" style="background-image: url('{{ image.path }}')">
+            <a href="{{ item.url }}" title="{{ image.title }}"  target="_blank">
+                <div class="figcaption">
+                    <strong>{{ image.title }}</strong>
+                    <span>{{ item.description|raw }}</span>
+                    <a href="portfolio.php?cid=1&amp;pid=16" class="opener"></a>
+                </div>
+            </a>
+        </div>
+{% endfor %}
+";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:552:"{% for item in __SELF__.portfolio %}
+    {% set image = item.images.first %}
+        <div class="figure" style="background-image: url('{{ image.path }}')">
+            <a href="{{ item.url }}" title="{{ image.title }}"  target="_blank">
+                <div class="figcaption">
+                    <strong>{{ image.title }}</strong>
+                    <span>{{ item.description|raw }}</span>
+                    <a href="portfolio.php?cid=1&amp;pid=16" class="opener"></a>
+                </div>
+            </a>
+        </div>
+{% endfor %}";}";

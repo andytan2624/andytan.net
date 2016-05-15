@@ -31,4 +31,15 @@
       }
     }
   }
+
+  #headerTxt {
+    text-align: left;
+    width: auto;
+  }
+}
+
+@media (max-width: 550px) {
+  .jumbotron-container {
+    width: 70%;
+  }
 }

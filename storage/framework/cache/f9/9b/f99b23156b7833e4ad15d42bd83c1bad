@@ -1,4 +1,4 @@
-1451807917s:4378:"a:6:{s:5:"mtime";i:1434860271;s:7:"content";s:2097:"title = "Category"
+1463295719s:4378:"a:6:{s:5:"mtime";i:1434860271;s:7:"content";s:2097:"title = "Category"
 url = "/category/:slug"
 layout = "default"
 description = "Filter posts by category"

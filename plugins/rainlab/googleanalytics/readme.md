@@ -6,19 +6,33 @@ This plugin adds Google Analytics tracking and reporting features to the [Octobe
 
 ### Configure the API
 
-Google Analytics API uses the OAuth security. In order to use the plugin you need create a Google API application.
+To get started using Google Analytics API, you need to first [create or select a project in the Google Developers Console and enable the API](https://console.developers.google.com//start/api?id=analytics&credential=client_key). Using this link guides you through the process and activates the Google Analytics API automatically.
 
-1. Go to the [Google API Console](https://cloud.google.com/console/project) and create a new project.
+Alternatively, you can activate the Google Analytics API yourself in the Developers Console by doing the following:
 
-1. On the project page go to the **APIs & auth > APIs** section and enable Analytics API.
+1. Open the [Credentials page](https://console.developers.google.com/project/_/apiui/credential).
 
-1. Go to the **APIs & auth / Credentials** section on the project page and click the Create New Client ID button. In the popup window select the **Service account** option and click **Create ID**.
+1. Select the **Overview** menu item and enable the **Analytics API**.
 
-1. A `.p12` file will be generated, this is the private key for your account. Accept the download and save it to your computer. Click **Okay got it**.
+In either case, you should end up on the **Credentials** page and can create your project's credentials from here.
 
-1. *Copy to your clipboard* the email address (ending with `@developer.gserviceaccount.com`) from the **OAuth > Service Account** section.
+#### Create a client ID
 
-1. Keep this tab open, the details from the **Service Account section** will be used again below.
+1. Open the [**Service accounts** section](https://console.developers.google.com/projectselector/permissions/serviceaccounts) of the Developers Console's **Permissions** page.
+
+1. Click **Create service account**.
+
+1. In the **Create service account** window, type a name for the service account, eg: `OctoberCMS Analytics`.
+
+1. Place a tick in the box  **Furnish a new private key** and select **JSON** for the **Key type**.
+
+1. Then, click **Create**.
+
+1. A `.json` file will be generated, this is the private key for your account. Accept the download and save it to your computer.
+
+1. Click **Close**.
+
+1. You should see an email ending with `iam.gserviceaccount.com`, if not select the **Permissions tab**. Copy this address to your clipboard.
 
 ### Configure Google Analytics
 
@@ -28,25 +42,19 @@ Google Analytics API uses the OAuth security. In order to use the plugin you nee
 
 1. *Paste the email address from the clipboard* in to the field **Add permissions for** and make sure the permission is set to **Read & Analyse**. Click **Add**.
 
-1. Click the **Admin** main menu tab again and select **Account > Account Settings** from the menu. *Copy to your clipboard* the Account ID (should be a number).
+1. Click the **Admin** main menu tab again and select **View > View Settings** from the menu. *Copy to your clipboard* the Profile ID (should be a number).
 
 ### Configure October back-end area
 
-1. Open your October back-end administration area and open **Settings > Google Analytics**. 
+1. Open your October back-end administration area and open **Settings > Google Analytics**.
 
 1. *Paste the Account ID from the clipboard* in to the field **Analytics View/Profile ID number**.
 
-1. Enter the name of the Google Developers Project in the **Google API project name** field.
+1. Upload the previously downloaded `.json` private key file to the **Private key** field.
 
-1. Enter the Service Account ID (ending with `.apps.googleusercontent.com`) in the **Google API Client ID** field. This should be sourced from the **Service Account section** open in the other tab.
+1. Specify the **Tracking ID** (eg `UA-12312312-3`) and **Domain name** values if you are going to use the plugin's built-in tracking component. To find this code, select **Admin > Property > Property Settings** from the Google Analytics menu.
 
-1. Enter the email address (ending with `@developer.gserviceaccount.com`) in the **Email address** field.
-
-1. Upload the previously downloaded `.p12` private key file to the **Private key** field.
-
-1. Specify the **Tracking ID** (eg `UA-12312312-3`) and **Domain name** values if you are going to use the plugin's built-in tracking component.
-
-1. If Tracking not working, change **Domain name** values to `auto` (fix for newborn google analytics account).
+1. If Tracking is not working initially, enter the value `auto` for the **Domain name** field. This is a fix for newborn Google Analytics accounts.
 
 ## Adding the tracking code
 
@@ -58,3 +66,18 @@ To add the plugin's tracking code to your website just drop the Google Analytics
 {% page %}
 {% component 'googleTracker' %}
 ```
+
+## Troubleshooting
+
+### Fix for Windows / XAMPP
+
+**cURL error 60: SSL certificate problem: unable to get local issuer certificate**
+
+1. Follow this link: http://curl.haxx.se/ca/cacert.pem and save it in a file called `cacert.pem`.
+
+1. Open your `php.ini` file insert or edit the following line: 
+    ```
+    curl.cainfo = "[pathtothisfile]\cacert.pem"
+    ```
+
+1. Restart Apache

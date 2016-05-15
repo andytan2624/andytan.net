@@ -1,4 +1,4 @@
-1451807917s:2891:"a:6:{s:5:"mtime";i:1434858602;s:7:"content";s:1368:"
+1463295719s:3229:"a:6:{s:5:"mtime";i:1452404862;s:7:"content";s:1537:"
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -8,19 +8,25 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Andy Tan</a>
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+                <div id="headerTxt">
+                    <p id="nameheader">Andy Tan</p>
+
+                    <p>Web Developer</p>
+                </div>
+            </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="{% if( this.page.id == 'about') %}active {% endif %}"><a href="{{ 'about'|page }}">About</a></li>
+                <li class="{% if( this.page.id == '') %}active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
                 <li class="{% if( this.page.id == 'portfolio') %}active {% endif %}"><a href="{{ 'portfolio'|page }}">Portfolio</a></li>
                 <li class="{% if( this.page.id == 'contact') %}active {% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>
-                <li class="{% if( this.page.id == 'posts') %}active {% endif %}"><a href="{{ 'posts'|page }}">Blog</a></li>
+                <li class="{% if( this.pagAe.id == 'posts') %}active {% endif %}"><a href="{{ 'posts'|page }}">Blog</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->
-</nav>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1367:"<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+</nav>";s:7:"viewBag";a:0:{}s:8:"settings";a:1:{s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:1536:"<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -29,15 +35,21 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Andy Tan</a>
+            <a class="navbar-brand" href="{{ 'home'|page }}">
+                <div id="headerTxt">
+                    <p id="nameheader">Andy Tan</p>
+
+                    <p>Web Developer</p>
+                </div>
+            </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="{% if( this.page.id == 'about') %}active {% endif %}"><a href="{{ 'about'|page }}">About</a></li>
+                <li class="{% if( this.page.id == '') %}active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
                 <li class="{% if( this.page.id == 'portfolio') %}active {% endif %}"><a href="{{ 'portfolio'|page }}">Portfolio</a></li>
                 <li class="{% if( this.page.id == 'contact') %}active {% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>
-                <li class="{% if( this.page.id == 'posts') %}active {% endif %}"><a href="{{ 'posts'|page }}">Blog</a></li>
+                <li class="{% if( this.pagAe.id == 'posts') %}active {% endif %}"><a href="{{ 'posts'|page }}">Blog</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div><!--/.container-fluid -->

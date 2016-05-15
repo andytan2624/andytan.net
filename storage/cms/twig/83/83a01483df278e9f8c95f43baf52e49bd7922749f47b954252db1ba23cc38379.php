@@ -56,7 +56,7 @@ class __TwigTemplate_da5f193bb155a3e3a1c20d89d78471b74a593bea723dd091be9d34a4c75
         echo "\">
     <link rel=\"stylesheet\" href=\"";
         // line 24
-        echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/css/responsive.css?v=1"));
+        echo $this->env->getExtension('CMS')->themeFilter(array(0 => "assets/css/responsive.css"));
         echo "\">
 
 
@@ -106,7 +106,7 @@ class __TwigTemplate_da5f193bb155a3e3a1c20d89d78471b74a593bea723dd091be9d34a4c75
 /*     <link rel="stylesheet" href="{{ ['assets/css/main.css']|theme }}">*/
 /*     <script src="{{ ['assets/javascript/vendor/modernizr-2.6.2.min.js']|theme }}"></script>*/
 /*     <link rel="stylesheet" href="{{ ['assets/css/style.css']|theme }}">*/
-/*     <link rel="stylesheet" href="{{ ['assets/css/responsive.css?v=1']|theme }}">*/
+/*     <link rel="stylesheet" href="{{ ['assets/css/responsive.css']|theme }}">*/
 /* */
 /* */
 /* </head>*/

@@ -17,3 +17,10 @@
 </div>
 <hr>
 {% endfor %}
+
+
+{% if (count < 5) %}
+    <script type="text/javascript">
+        $('#load_more').hide();
+    </script>
+{% endif %}

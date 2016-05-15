@@ -151,30 +151,141 @@
         "description": "Provides a simple API and specification that abstracts away the details of HTTP into a single PHP function."
     },
     {
-        "name": "guzzlehttp/guzzle",
-        "version": "5.2.0",
-        "version_normalized": "5.2.0.0",
+        "name": "psr/http-message",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/guzzle/guzzle.git",
-            "reference": "475b29ccd411f2fa8a408e64576418728c032cfa"
+            "url": "https://github.com/php-fig/http-message.git",
+            "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/475b29ccd411f2fa8a408e64576418728c032cfa",
-            "reference": "475b29ccd411f2fa8a408e64576418728c032cfa",
+            "url": "https://api.github.com/repos/php-fig/http-message/zipball/85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
+            "reference": "85d63699f0dbedb190bbd4b0d2b9dc707ea4c298",
             "shasum": ""
         },
         "require": {
-            "guzzlehttp/ringphp": "~1.0",
+            "php": ">=5.3.0"
+        },
+        "time": "2015-05-04 20:22:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Http\\Message\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for HTTP messages",
+        "keywords": [
+            "http",
+            "http-message",
+            "psr",
+            "psr-7",
+            "request",
+            "response"
+        ]
+    },
+    {
+        "name": "guzzlehttp/psr7",
+        "version": "1.2.2",
+        "version_normalized": "1.2.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/psr7.git",
+            "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+            "reference": "f5d04bdd2881ac89abde1fb78cc234bce24327bb",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0",
+            "psr/http-message": "~1.0"
+        },
+        "provide": {
+            "psr/http-message-implementation": "1.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "~4.0"
+        },
+        "time": "2016-01-23 01:23:02",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "GuzzleHttp\\Psr7\\": "src/"
+            },
+            "files": [
+                "src/functions_include.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Michael Dowling",
+                "email": "mtdowling@gmail.com",
+                "homepage": "https://github.com/mtdowling"
+            }
+        ],
+        "description": "PSR-7 message implementation",
+        "keywords": [
+            "http",
+            "message",
+            "stream",
+            "uri"
+        ]
+    },
+    {
+        "name": "guzzlehttp/guzzle",
+        "version": "5.3.0",
+        "version_normalized": "5.3.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/guzzle/guzzle.git",
+            "reference": "f3c8c22471cb55475105c14769644a49c3262b93"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/guzzle/guzzle/zipball/f3c8c22471cb55475105c14769644a49c3262b93",
+            "reference": "f3c8c22471cb55475105c14769644a49c3262b93",
+            "shasum": ""
+        },
+        "require": {
+            "guzzlehttp/ringphp": "^1.1",
             "php": ">=5.4.0"
         },
         "require-dev": {
             "ext-curl": "*",
-            "phpunit/phpunit": "~4.0",
-            "psr/log": "~1.0"
+            "phpunit/phpunit": "^4.0",
+            "psr/log": "^1.0"
         },
-        "time": "2015-01-28 01:03:29",
+        "time": "2015-05-20 03:47:55",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -212,17 +323,17 @@
     },
     {
         "name": "phpseclib/phpseclib",
-        "version": "2.0.0",
-        "version_normalized": "2.0.0.0",
+        "version": "2.0.1",
+        "version_normalized": "2.0.1.0",
         "source": {
             "type": "git",
             "url": "https://github.com/phpseclib/phpseclib.git",
-            "reference": "a74aa9efbe61430fcb60157c8e025a48ec8ff604"
+            "reference": "ba6fb78f727cd09f2a649113b95468019e490585"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/a74aa9efbe61430fcb60157c8e025a48ec8ff604",
-            "reference": "a74aa9efbe61430fcb60157c8e025a48ec8ff604",
+            "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/ba6fb78f727cd09f2a649113b95468019e490585",
+            "reference": "ba6fb78f727cd09f2a649113b95468019e490585",
             "shasum": ""
         },
         "require": {
@@ -238,10 +349,9 @@
             "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
             "ext-libsodium": "SSH2/SFTP can make use of some algorithms provided by the libsodium-php extension.",
             "ext-mcrypt": "Install the Mcrypt extension in order to speed up a few other cryptographic operations.",
-            "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations.",
-            "pear-pear/PHP_Compat": "Install PHP_Compat to get phpseclib working on PHP < 5.0.0."
+            "ext-openssl": "Install the OpenSSL extension in order to speed up a wide variety of cryptographic operations."
         },
-        "time": "2015-08-04 04:48:03",
+        "time": "2016-01-18 17:07:21",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -250,9 +360,6 @@
             }
         },
         "notification-url": "https://packagist.org/downloads/",
-        "include-path": [
-            "phpseclib/"
-        ],
         "license": [
             "MIT"
         ],
@@ -275,6 +382,11 @@
             {
                 "name": "Hans-Jürgen Petrich",
                 "email": "petrich@tronic-media.com",
+                "role": "Developer"
+            },
+            {
+                "name": "Graham Campbell",
+                "email": "graham@alt-three.com",
                 "role": "Developer"
             }
         ],
@@ -466,29 +578,31 @@
     },
     {
         "name": "google/auth",
-        "version": "v0.4",
-        "version_normalized": "0.4.0.0",
+        "version": "v0.5",
+        "version_normalized": "0.5.0.0",
         "source": {
             "type": "git",
             "url": "https://github.com/google/google-auth-library-php.git",
-            "reference": "b2d0e7bdcbe8ccdd0f83a7527ef23bcc202e331a"
+            "reference": "7ff4cce0c9d3c6bcba154e15fba76b89d1847340"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/b2d0e7bdcbe8ccdd0f83a7527ef23bcc202e331a",
-            "reference": "b2d0e7bdcbe8ccdd0f83a7527ef23bcc202e331a",
+            "url": "https://api.github.com/repos/google/google-auth-library-php/zipball/7ff4cce0c9d3c6bcba154e15fba76b89d1847340",
+            "reference": "7ff4cce0c9d3c6bcba154e15fba76b89d1847340",
             "shasum": ""
         },
         "require": {
             "firebase/php-jwt": "~2.0|~3.0",
-            "guzzlehttp/guzzle": "5.2.*",
-            "php": ">=5.4"
+            "guzzlehttp/guzzle": "~5.2|~6.0",
+            "guzzlehttp/psr7": "1.2.*",
+            "php": ">=5.4",
+            "psr/http-message": "1.0.*"
         },
         "require-dev": {
             "phplint/phplint": "0.0.1",
             "phpunit/phpunit": "3.7.*"
         },
-        "time": "2015-11-03 23:16:35",
+        "time": "2015-12-17 21:16:21",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -513,26 +627,28 @@
     },
     {
         "name": "google/apiclient",
-        "version": "dev-master",
-        "version_normalized": "9999999-dev",
+        "version": "v2.0.0-RC4",
+        "version_normalized": "2.0.0.0-RC4",
         "source": {
             "type": "git",
             "url": "https://github.com/google/google-api-php-client.git",
-            "reference": "abeddc079e3ca32b3aee53acc3dd0ba83b31702c"
+            "reference": "5620e578b495942a3b60eb99e2f0c1aeca23fbed"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/google/google-api-php-client/zipball/abeddc079e3ca32b3aee53acc3dd0ba83b31702c",
-            "reference": "abeddc079e3ca32b3aee53acc3dd0ba83b31702c",
+            "url": "https://api.github.com/repos/google/google-api-php-client/zipball/5620e578b495942a3b60eb99e2f0c1aeca23fbed",
+            "reference": "5620e578b495942a3b60eb99e2f0c1aeca23fbed",
             "shasum": ""
         },
         "require": {
             "firebase/php-jwt": "~2.0|~3.0",
-            "google/auth": "~0.4",
-            "guzzlehttp/guzzle": "5.2.*",
+            "google/auth": "0.5",
+            "guzzlehttp/guzzle": "~5.2|~6.0",
+            "guzzlehttp/psr7": "1.2.*",
             "monolog/monolog": "^1.17",
             "php": ">=5.4",
-            "phpseclib/phpseclib": "~2.0"
+            "phpseclib/phpseclib": "~2.0",
+            "psr/http-message": "1.0.*"
         },
         "require-dev": {
             "phpunit/phpunit": "~4",
@@ -540,14 +656,14 @@
             "symfony/css-selector": "~2.0",
             "symfony/dom-crawler": "~2.0"
         },
-        "time": "2015-12-04 19:36:02",
+        "time": "2015-12-28 18:50:26",
         "type": "library",
         "extra": {
             "branch-alias": {
                 "dev-master": "2.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Google_": "src/"

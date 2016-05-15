@@ -1,94 +1,323 @@
-1451807917s:4754:"a:6:{s:5:"mtime";i:1434860280;s:7:"content";s:2283:"title = "Contact Us"
+1463295719s:10375:"a:6:{s:5:"mtime";i:1463293042;s:7:"content";s:5090:"title = "Contact"
 url = "/contact"
 layout = "default"
-description = "Just another about page"
+lat = "-33.8679515"
+long = "151.2012683"
 ==
-<header class="intro-header" style="background-image: url('{{ "assets/images/about-bg.png"|theme }}')">
+<header class="intro-header"></header>
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="site-heading">
-                <h1>{{ this.page.title }}</h1>
+        <div class="location-mapping-wrap">
+
+            <div class="location-caption-outter">
+                <div class="location-caption-wrap">
+                    <div class="location-caption">
+                        <div class="office-title">
+                            {{ this.page.title }}
+                        </div>
+                        <div class="office-address">
+                            I am currently based in Sydney at the moment. If you would like to get in contact, contact me through LinkedIn
+                            <a target="_blank" href="https://au.linkedin.com/in/andytan87">here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gmap-outter">
+                <div id="gmap" style="width: 100%;height: 100%;">
+                </div>
+
             </div>
         </div>
     </div>
 </div>
-</header>
 
+
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfOOte0Y-iuoaBmWPFMj_gr52tQ5F4nGg&callback=initMap"></script>
+<script type="text/javascript">
+    function initialize() {
+        var myLatlng = new google.maps.LatLng({{ this.page.lat }}, {{ this.page.long }});
+
+        var mapOptions = {
+            center: {lat: {{ this.page.lat }}, lng: {{ this.page.long }}},
+            zoom: 13
+        };
+        var map = new google.maps.Map(document.getElementById('gmap'),
+                mapOptions);
+
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
+        map.panBy(200, 0);
+        var styles = [
+            {
+                "featureType": "water",
+                "stylers": [
+                    {"visibility": "simplified"},
+                    {"color": "#ccf7ff"}
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#B0B0B0"},
+                    {"visibility": "on"}
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {"visibility": "on"},
+                    {"color": "#e1d7d0"}
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {"visibility": "on"},
+                    {"color": "#dacfc6"}
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#e2e2e1"}
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#e2e2e1"}
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {"color": "#999999"}
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#B0B0B0"},
+                    {"visibility": "on"}
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {"color": "#9b9b9b"}
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {"color": "#dadbdb"}
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {"color": "#b1b0b1"}
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {"color": "#e9e9e9"}
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {"color": "#dfd8d8"}
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {"color": "#d0835a"}
+                ]
+            }
+        ];
+
+        map.setOptions({styles: styles, draggable: false});
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+
+</script>";s:7:"viewBag";a:0:{}s:8:"settings";a:6:{s:5:"title";s:7:"Contact";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:3:"lat";s:11:"-33.8679515";s:4:"long";s:11:"151.2012683";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:4992:"<header class="intro-header"></header>
 <div class="container">
     <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h1>HTML Ipsum Presents</h1>
+        <div class="location-mapping-wrap">
 
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+            <div class="location-caption-outter">
+                <div class="location-caption-wrap">
+                    <div class="location-caption">
+                        <div class="office-title">
+                            {{ this.page.title }}
+                        </div>
+                        <div class="office-address">
+                            I am currently based in Sydney at the moment. If you would like to get in contact, contact me through LinkedIn
+                            <a target="_blank" href="https://au.linkedin.com/in/andytan87">here</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gmap-outter">
+                <div id="gmap" style="width: 100%;height: 100%;">
+                </div>
 
-            <h2>Header Level 2</h2>
-
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
-
-            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-            <h3>Header Level 3</h3>
-
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ul>
-
-            <pre><code>
-                #header h1 a {
-                display: block;
-                width: 300px;
-                height: 80px;
-                }
-            </code></pre>
-        </div>
-    </div>
-</div>";s:7:"viewBag";a:0:{}s:8:"settings";a:5:{s:5:"title";s:10:"Contact Us";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:11:"description";s:23:"Just another about page";s:10:"components";a:0:{}}s:4:"code";N;s:6:"markup";s:2183:"<header class="intro-header" style="background-image: url('{{ "assets/images/about-bg.png"|theme }}')">
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="site-heading">
-                <h1>{{ this.page.title }}</h1>
             </div>
         </div>
     </div>
 </div>
-</header>
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <h1>HTML Ipsum Presents</h1>
 
-            <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+<script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfOOte0Y-iuoaBmWPFMj_gr52tQ5F4nGg&callback=initMap"></script>
+<script type="text/javascript">
+    function initialize() {
+        var myLatlng = new google.maps.LatLng({{ this.page.lat }}, {{ this.page.long }});
 
-            <h2>Header Level 2</h2>
+        var mapOptions = {
+            center: {lat: {{ this.page.lat }}, lng: {{ this.page.long }}},
+            zoom: 13
+        };
+        var map = new google.maps.Map(document.getElementById('gmap'),
+                mapOptions);
 
-            <ol>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: 'Hello World!'
+        });
+        map.panBy(200, 0);
+        var styles = [
+            {
+                "featureType": "water",
+                "stylers": [
+                    {"visibility": "simplified"},
+                    {"color": "#ccf7ff"}
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#B0B0B0"},
+                    {"visibility": "on"}
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "geometry",
+                "stylers": [
+                    {"visibility": "on"},
+                    {"color": "#e1d7d0"}
+                ]
+            },
+            {
+                "featureType": "landscape",
+                "elementType": "geometry",
+                "stylers": [
+                    {"visibility": "on"},
+                    {"color": "#dacfc6"}
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#e2e2e1"}
+                ]
+            },
+            {
+                "featureType": "road.local",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#e2e2e1"}
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "geometry.stroke",
+                "stylers": [
+                    {"color": "#999999"}
+                ]
+            },
+            {
+                "featureType": "transit.line",
+                "elementType": "geometry.fill",
+                "stylers": [
+                    {"color": "#B0B0B0"},
+                    {"visibility": "on"}
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {"color": "#9b9b9b"}
+                ]
+            },
+            {
+                "featureType": "road.arterial",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {"color": "#dadbdb"}
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {"color": "#b1b0b1"}
+                ]
+            },
+            {
+                "featureType": "poi",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {"color": "#e9e9e9"}
+                ]
+            },
+            {
+                "featureType": "road.highway",
+                "elementType": "labels.text.stroke",
+                "stylers": [
+                    {"color": "#dfd8d8"}
+                ]
+            },
+            {
+                "featureType": "road",
+                "elementType": "labels.text.fill",
+                "stylers": [
+                    {"color": "#d0835a"}
+                ]
+            }
+        ];
 
-            <blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+        map.setOptions({styles: styles, draggable: false});
+    }
 
-            <h3>Header Level 3</h3>
+    google.maps.event.addDomListener(window, 'load', initialize);
 
-            <ul>
-                <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-                <li>Aliquam tincidunt mauris eu risus.</li>
-            </ul>
 
-            <pre><code>
-                #header h1 a {
-                display: block;
-                width: 300px;
-                height: 80px;
-                }
-            </code></pre>
-        </div>
-    </div>
-</div>";}";
+</script>";}";

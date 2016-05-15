@@ -23,6 +23,9 @@ $this['posts'] = Post::isPublished()
 ->take(5)
 ->with('categories')
 ->get();
+
+$this['count'] = count($this['posts']);
+
 }
 ?>
 ==
@@ -71,11 +74,11 @@ $this['posts'] = Post::isPublished()
         <div class="col-md-2 col-md-offset-5">
             <a id="load_more"
                href="#"
-               class="btn btn-primary"
+               class="btn btn-primary load-more-button"
                data-request="onLoadMorePosts"
                data-request-update="'ajax/posts': '@#posts'"
                data-request-data='"postsCount": 1'
-               data-request-success="incrementPostsCounter($el);">
+               data-request-success="incrementPostsCounter($el);disableLoadButton();">
                 Load more
             </a>
         </div>
@@ -86,7 +89,12 @@ $this['posts'] = Post::isPublished()
 <script>
     function incrementPostsCounter($el){
         var data = $.parseJSON( "{" + $el.data('request-data') + "}" );
+        console.log(JSON.stringify($el));
         $el.data('request-data', '"postsCount": ' + (++data.postsCount) );
+    }
+
+    function disableLoadButton() {
+        console.log('AMY KIM IS SO HOT');
     }
 </script>
 

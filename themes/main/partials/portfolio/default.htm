@@ -7,11 +7,15 @@
         <div class="row snapshot">
             {% for item in __SELF__.portfolio %}
                 <div class="col-md-4">
-                    <div class="circle">
-                        {% set image = item.images.first %}
-                        <img src="{{ image.path }}" class="img-responsive" alt="{{ image.title }}">
-                    </div>
-                    <h3>{{ item.title }}</h3>
+                    <a href="{{ item.url }}" title="{{ image.title }}"  target="_blank">
+                        <div class="circle" >
+                            {% set image = item.images.first %}
+                            <img src="{{ image.path }}" class="img-responsive" alt="{{ image.title }}">
+                        </div>
+                    </a>
+                    <a href="{{ item.url }}" title="{{ image.title }}" target="_blank">
+                        <h3>{{ item.title }}</h3>
+                    </a>
                     <p>{{ item.description|raw }}</p>
                 </div>
             {% endfor %}
